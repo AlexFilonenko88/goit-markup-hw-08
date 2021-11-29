@@ -1,0 +1,66 @@
+.teams-title,
+.customers-title {
+  margin-top: 0px;
+
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.teams {
+  margin-top: 0px;
+  margin-bottom: 1px;
+  background-color: $section-teams-button;
+
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.teams-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.teams-person {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: #757575;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.teams-wrapper {
+  padding: 30px 10px;
+}
+
+.offers > h2,
+.works > h2,
+.teams > h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.list-teams__border {
+  background-color: $primary-white-color;
+  width: 270px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.list-teams__border:last-child {
+  margin-right: 0;
+}

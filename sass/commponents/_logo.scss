@@ -1,0 +1,16 @@
+.header-logo {
+  color: $title-text-color;
+  font-family: $second-font;
+  text-decoration: none;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  display: flex;
+}
+
+.header-logo--color,
+.footer-logo--color {
+  color: $accent-color;
+  font-size: 26px;
+}
