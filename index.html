@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
     <link rel="stylesheet" href="./css/main.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
 </head>
 
@@ -22,6 +22,7 @@
                 <a href="#" class="header-logo">
                     <span class="header-logo--color">Web</span>Studio 
                 </a>
+                <div class="header-list__nav__wrapper">
                 <ul class="header-list__navigation list-header__navigation">
                     <li class="header-site__navigation"> 
                         <a class="header-site__link current-header" href="#">Студия</a>
@@ -33,6 +34,7 @@
                         <a class="header-site__link" href="#">Контакты</a>
                     </li>
                 </ul>
+                </div>
             </nav>
                 <ul class="header-site__navigation">
                     <li class="header-site__navigation">
@@ -202,7 +204,7 @@
                     <h2 class="teams-title">Наша команда</h2>
                     <ul class="list-teams">
                         <li class="list-teams__border">
-                            <img src="./images/teamasq.jpg" width="270" alt="Команда 1" />
+                            <img class="list-teams__border--width" src="./images/teamasq.jpg" width="270" alt="Команда 1" />
                             <div class="teams-wrapper">
                                 <h3 class="teams-name">Игорь Демьяненко</h3>
                                 <p class="teams-person">Product Designer</p>
@@ -239,7 +241,7 @@
                             </div>
                         </li>
                         <li class="list-teams__border">
-                            <img src="./images/teambsq.jpg" width="270" alt="Команда 2" />
+                            <img class="list-teams__border--width" src="./images/teambsq.jpg" width="270" alt="Команда 2" />
                             <div class="teams-wrapper">
                                 <h3 class="teams-name">Ольга Репина</h3>
                                 <p class="teams-person">Frontend Developer</p>
@@ -276,7 +278,7 @@
                             </div>
                         </li>
                         <li class="list-teams__border"> 
-                            <img src="./images/teamcsq.jpg" width="270" alt="Команда 3" />
+                            <img class="list-teams__border--width" src="./images/teamcsq.jpg" width="270" alt="Команда 3" />
                             <div class="teams-wrapper">
                                 <h3 class="teams-name">Николай Тарасов</h3>
                                 <p class="teams-person">Marketing</p>
@@ -313,7 +315,7 @@
                             </div>
                         </li>
                         <li class="list-teams__border">
-                            <img src="./images/teamdsq.jpg" width="270" alt="Команда 4" />
+                            <img class="list-teams__border--width" src="./images/teamdsq.jpg" width="270" alt="Команда 4" />
                             <div class="teams-wrapper">
                                 <h3 class="teams-name">Михаил Ермаков</h3>
                                 <p class="teams-person">UI Designer</p>
@@ -408,7 +410,7 @@
     <!-- Подвал -->
     <footer class="footer">
         <div class="container footer-list">
-            <div>
+            <div class="container footer-list">
                 <a class="footer-logo" href="#">
                     <span class="footer-logo--color">Web</span><span class="logo-footer--color">Studio</span>
                 </a>

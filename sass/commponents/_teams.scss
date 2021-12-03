@@ -64,3 +64,28 @@
 .list-teams__border:last-child {
   margin-right: 0;
 }
+
+@media screen and (max-width: 480px) {
+  .list-teams {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .list-teams__border {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .list-teams__border--width {
+    width: 100%;
+  }
+
+  .list-teams__border:last-child {
+    margin-bottom: 0;
+  }
+}

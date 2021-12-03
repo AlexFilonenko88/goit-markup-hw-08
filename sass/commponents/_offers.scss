@@ -1,3 +1,10 @@
+@media screen and (max-width: 480px) {
+  .offers-list__title {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .offers-title__list {
   font-weight: 700;
   font-size: 14px;
@@ -5,6 +12,13 @@
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .offers-title__list {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .offers-list__text {
@@ -25,6 +39,13 @@
 
 .offers-list__navigation:last-child {
   margin-right: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .offers-list__navigation {
+    margin-right: 0;
+    width: 100%;
+  }
 }
 
 .offers-icon__list {
