@@ -16,7 +16,6 @@
   .customers-link__list {
     display: flex;
     flex-wrap: wrap;
-    // width: 100%;
     align-items: center;
   }
 }
@@ -42,16 +41,8 @@
 @media screen and (max-width: 480px) {
   .customers-list {
     margin-bottom: 30px;
+    margin-left: auto;
   }
-
-  // .customers-list:nth-child(2) {
-  //   margin-right: 0;
-  //   // margin-bottom: 0;
-  // }
-  // .customers-list:nth-child(4) {
-  //   margin-right: 0;
-  //   // margin-bottom: 0;
-  // }
 }
 
 .customers-link {
@@ -69,6 +60,12 @@
 
 .customers-list:last-child {
   margin-right: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .customers-list:last-child {
+    margin-right: auto;
+  }
 }
 
 .customers-link:hover,

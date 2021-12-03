@@ -948,6 +948,12 @@ label {
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 480px) {
+  .teams {
+    width: 480px;
+  }
+}
+
 .teams-name {
   font-weight: 500;
   font-size: 16px;
@@ -1001,9 +1007,6 @@ label {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .list-teams__border {
     width: 100%;
@@ -1077,6 +1080,7 @@ label {
 @media screen and (max-width: 480px) {
   .customers-list {
     margin-bottom: 30px;
+    margin-left: auto;
   }
 }
 
@@ -1101,6 +1105,12 @@ label {
   margin-right: 0;
 }
 
+@media screen and (max-width: 480px) {
+  .customers-list:last-child {
+    margin-right: auto;
+  }
+}
+
 .customers-link:hover,
 .customers-link:focus,
 .customers-list__icon:hover,
@@ -1120,6 +1130,12 @@ label {
 
 .footer-button:focus {
   background-color: #188ce8;
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    width: 480px;
+  }
 }
 
 .footer-address {

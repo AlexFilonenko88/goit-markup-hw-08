@@ -19,6 +19,12 @@
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 480px) {
+  .teams {
+    width: 480px;
+  }
+}
+
 .teams-name {
   font-weight: 500;
   font-size: 16px;
@@ -69,7 +75,8 @@
   .list-teams {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
+    // justify-content: center;
   }
 
   .list-teams__border {
