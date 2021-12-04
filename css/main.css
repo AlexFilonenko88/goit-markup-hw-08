@@ -666,6 +666,12 @@ label {
           transform: translate(-50%, -50%) scale(0.9);
 }
 
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 452px;
+  }
+}
+
 .backdrop-button {
   position: absolute;
   top: 0;
@@ -711,9 +717,10 @@ label {
   font-size: 26px;
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (max-width: 480px) {
   .hero {
     background-image: url("/images/Headerimg@2х.jpg");
+    background-size: cover;
   }
 }
 
@@ -1081,6 +1088,7 @@ label {
   .customers-list {
     margin-bottom: 30px;
     margin-left: auto;
+    width: calc((100%-30px) / 2);
   }
 }
 
@@ -1331,6 +1339,18 @@ label {
 .logo-footer--color {
   color: #ffffff;
   font-size: 26px;
+}
+
+@media screen and (max-width: 480px) {
+  .header-list__nav__wrapper {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-site__navigation {
+    display: none;
+  }
 }
 
 .button-portfolio {

@@ -178,6 +178,12 @@
   }
 }
 
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 452px;
+  }
+}
+
 .backdrop-button {
   position: absolute;
   top: 0;
