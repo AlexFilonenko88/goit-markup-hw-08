@@ -1,18 +1,20 @@
-@media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: url("/images/Headerimg@2х.jpg");
-  }
-}
-
-// @media screen and (max-width: 480px) {
+// @media (min-device-pixel-ratio: 2),
+//   (-webkit-min-device-pixel-ratio: 2),
+//   (min-resolution: 192dpi),
+//   (min-resolution: 2dppx) {
 //   .hero {
 //     background-image: url("/images/Headerimg@2х.jpg");
-//     background-size: cover;
+//     max-width: 100%;
 //   }
 // }
+
+@media screen and (max-width: 480px) {
+  .hero {
+    background-image: url("/images/HeaderimgMobile.jpg");
+    // background-size: cover;
+    max-width: 100%;
+  }
+}
 
 .hero {
   padding-top: 200px;
