@@ -2,6 +2,7 @@
   background-color: $section-hero;
   padding-top: 60px;
   padding-bottom: 60px;
+  width: 100%;
 
   &-button:hover {
     background-color: #188ce8;
@@ -11,14 +12,79 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-  .footer {
-    width: 480px;
+.footer-list--wrapper,
+.footer-wrapper,
+.footer-section__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-section__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.footer-address,
+.footer-navigation {
+  text-align: center;
+}
+
+.footer-wrapper > h2 {
+  margin-bottom: 20px;
+}
+
+.footer-section__wrapper > h2 {
+  margin-bottom: 20px;
+}
+
+.footer-wrapper {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    align-items: flex-start;
+  }
+}
+
+.footer-list--wrapper {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+    align-items: flex-start;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
   }
 }
 
 .footer-address {
   margin-top: 20px;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .footer-text {
@@ -34,6 +100,22 @@
 
 .footer-navigation {
   margin-bottom: 9px;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+
+  font-family: $second-font;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .footer-navigation__link {
@@ -46,54 +128,25 @@
 }
 
 .footer-list {
-  display: flex;
-  align-items: baseline;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-@media screen and (max-width: 480px) {
-  .footer-list {
+  @media screen and (min-width: 768px) {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .footer-section__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
   }
 
-  .footer-section__list {
+  @media screen and (min-width: 1200px) {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: start;
+    text-align: start;
   }
-  .footer-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-}
-
-.footer-form {
-  margin-right: 12px;
 }
 
 .footer-icon {
   fill: $primary-white-color;
   margin: 13px 28px 13px 10px;
-}
-
-.footer-logo {
-  display: flex;
-  align-items: center;
-
-  font-family: $second-font;
-  font-weight: 700;
-  text-decoration: none;
 }
 
 .footer-button {
@@ -114,6 +167,10 @@
   align-items: center;
 
   width: 200px;
+
+  @media screen and (min-width: 1200px) {
+    margin: 0 0 0 12px;
+  }
 }
 
 .footer-input {
@@ -129,16 +186,28 @@
 
   padding: 15px 0 13px 16px;
 
-  width: 358px;
+  width: 450px;
   outline: none;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
-.footer-section__list {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 20px 0 0 0;
-  padding: 0;
+.footer-section__wrapper {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    list-style: none;
+    margin: 20px 0 0 0;
+    padding: 0;
+  }
 }
 
 .footer-wrapper > h2 {
@@ -157,7 +226,7 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  margin: 0;
+  // margin: 0;
   padding: 0;
   text-transform: uppercase;
   color: $primary-white-color;
@@ -167,9 +236,17 @@
   list-style: none;
   padding-left: 0;
   margin: 0;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .logo-footer--color {
   color: $primary-white-color;
-  font-size: 26px;
+  font-size: 24px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+  }
 }

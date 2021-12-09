@@ -22,7 +22,19 @@
                 <a href="#" class="header-logo">
                     <span class="header-logo--color">Web</span>Studio 
                 </a>
-                <div class="header-list__nav__wrapper">
+                <button 
+                    class="button-header__navigation is-open"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                    js-open-container
+                    >
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="icon-header__menu" href="./images/svg-sprite/symbol-defs.svg#icon-menu_40px"></use>
+                        <use class="icon-header__close" href="./images/svg-sprite/symbol-defs.svg#icon-close_40px"></use>
+                    </svg>
+                </button>
+                <div class="header-list__nav__wrapper is-open">
                 <ul class="header-list__navigation list-header__navigation">
                     <li class="header-site__navigation"> 
                         <a class="header-site__link current-header" href="#">Студия</a>
@@ -35,8 +47,9 @@
                     </li>
                 </ul>
                 </div>
+                
             </nav>
-                <ul class="header-site__navigation">
+                <ul class="header-site__navigation header-navigation">
                     <li class="header-site__navigation">
                         <a class="header-site__link--navigation" href="mailto:info@devstudio.com">
                             <svg  class="header-site__icon"  width="16" height="12">
@@ -204,7 +217,17 @@
                     <h2 class="teams-title">Наша команда</h2>
                     <ul class="list-teams">
                         <li class="list-teams__border">
-                            <img class="list-teams__border--width" src="./images/teamasq.jpg" width="270" alt="Команда 1" />
+                            <img class="list-teams__border--width" 
+                            srcset="
+                            ./images/teams/igor-desktop@1x.jpg 270w,
+                            ./images/teams/igor-tablet@1x.jpg 354w,
+                            ./images/teams/igor-mobile@1x.jpg 450w,
+                            ./images/teams/igor-desktop@2x.jpg 540w,
+                            ./images/teams/igor-tablet@2x.jpg 708w
+                            ./images/teams/igor-mobile@1x.jpg 900w
+                            "
+                            src="./images/teams/igor-mobile@1x.jpg" width="270" alt="Igor"
+                            sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw" />
                             <div class="teams-wrapper">
                                 <h3 class="teams-name">Игорь Демьяненко</h3>
                                 <p class="teams-person">Product Designer</p>
@@ -241,7 +264,18 @@
                             </div>
                         </li>
                         <li class="list-teams__border">
-                            <img class="list-teams__border--width" src="./images/teambsq.jpg" width="270" alt="Команда 2" />
+                            <img class="list-teams__border--width" 
+                            srcset="
+                            ./images/teams/olga-desktop@1x.jpg 270w,
+                            ./images/teams/olga-tablet@1x.jpg 354w,
+                            ./images/teams/olga-mobile@1x.jpg 450w,
+                            ./images/teams/olga-desktop@2x.jpg 540w,
+                            ./images/teams/olga-tablet@2x.jpg 708w
+                            ./images/teams/olga-mobile@1x.jpg 900w
+                            "
+                            src="./images/teams/olga-mobile@1x.jpg" width="270" alt="Olga"
+                            sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+                            />
                             <div class="teams-wrapper">
                                 <h3 class="teams-name">Ольга Репина</h3>
                                 <p class="teams-person">Frontend Developer</p>
@@ -278,7 +312,18 @@
                             </div>
                         </li>
                         <li class="list-teams__border"> 
-                            <img class="list-teams__border--width" src="./images/teamcsq.jpg" width="270" alt="Команда 3" />
+                            <img class="list-teams__border--width"
+                            srcset="
+                            ./images/teams/nikolay-desktop@1x.jpg 270w,
+                            ./images/teams/nikolay-tablet@1x.jpg 354w,
+                            ./images/teams/nikolay-mobile@1x.jpg 450w,
+                            ./images/teams/nikolay-desktop@2x.jpg 540w,
+                            ./images/teams/nikolay-tablet@2x.jpg 708w
+                            ./images/teams/nikolay-mobile@1x.jpg 900w
+                            "
+                            src="./images/teams/nikolay-mobile@1x.jpg" width="270" alt="Nikolay"
+                            sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+                            />
                             <div class="teams-wrapper">
                                 <h3 class="teams-name">Николай Тарасов</h3>
                                 <p class="teams-person">Marketing</p>
@@ -315,7 +360,18 @@
                             </div>
                         </li>
                         <li class="list-teams__border">
-                            <img class="list-teams__border--width" src="./images/teamdsq.jpg" width="270" alt="Команда 4" />
+                            <img class="list-teams__border--width"
+                            srcset="
+                            ./images/teams/mihayl-desktop@1x.jpg 270w,
+                            ./images/teams/mihayl-tablet@1x.jpg 354w,
+                            ./images/teams/mihayl-mobile@1x.jpg 450w,
+                            ./images/teams/mihayl-desktop@2x.jpg 540w,
+                            ./images/teams/mihayl-tablet@2x.jpg 708w
+                            ./images/teams/mihayl-mobile@1x.jpg 900w
+                            "
+                            src="./images/teams/mihayl-mobile@1x.jpg" width="270" alt="Mihayl"
+                            sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+                            />
                             <div class="teams-wrapper">
                                 <h3 class="teams-name">Михаил Ермаков</h3>
                                 <p class="teams-person">UI Designer</p>
@@ -410,6 +466,7 @@
     <!-- Подвал -->
     <footer class="footer">
         <div class="container footer-list">
+            <div class="footer-list--wrapper">
                 <a class="footer-logo" href="#">
                     <span class="footer-logo--color">Web</span><span class="logo-footer--color">Studio</span>
                 </a>
@@ -424,6 +481,7 @@
                         </li>
                     </ul>
                 </address>
+            </div>
             <div class="footer-wrapper">
                 <h2>присоединяйтесь</h2>
                 <ul class="teams-link__list">
@@ -474,5 +532,6 @@
         </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

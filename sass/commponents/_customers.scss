@@ -2,7 +2,7 @@
   margin-top: 0px;
   margin-bottom: 1px;
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
 
   &-link:hover {
     border: 1px solid $accent-color;
@@ -10,45 +10,46 @@
   &-link:focus {
     border: 1px solid $accent-color;
   }
-}
 
-@media screen and (max-width: 480px) {
-  .customers-link__list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .customers {
-    width: 480px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .customers-link {
-    width: 100%;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 94px;
   }
 }
 
 .customers-list {
-  margin: 0 30px 0 0;
-  width: 170px;
-  height: 92px;
-}
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 210px;
+  // width: calc((100%-30px) / 2);
+  margin-left: 30px;
 
-@media screen and (max-width: 480px) {
-  .customers-list {
+  @media screen and (min-width: 480px) {
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    width: calc((100%-30px) / 2);
+    width: 210px;
+    margin-left: 30px;
+    height: 92px;
   }
 
-  // .customers-list:nth-child(2n) {
-  //   margin-left: 30px;
-  // }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 226px;
+    margin-left: 30px;
+    height: 92px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 170px;
+
+    margin-left: 30px;
+    height: 92px;
+  }
 }
 
 .customers-link {
@@ -58,19 +59,45 @@
 
 .customers-link__list {
   display: flex;
-  align-items: center;
-  list-style: none;
+  flex-direction: column;
+  // list-style: none;
   margin: 0;
   padding: 0;
+  margin-left: -30px;
+  margin-top: -30px;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+  }
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .customers-list:last-child {
   margin-right: 0;
+  margin-bottom: 0;
 }
 
-@media screen and (max-width: 480px) {
-  .customers-list:last-child {
-    margin-right: auto;
+.customers-list:nth-child(5) {
+  @media screen and (min-width: 480px) {
+    margin-bottom: 0;
+  }
+}
+
+.customers-list:nth-child(4) {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+
+.customers-list:nth-child(-n + 3) {
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
   }
 }
 
