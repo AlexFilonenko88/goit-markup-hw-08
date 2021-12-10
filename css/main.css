@@ -400,6 +400,7 @@ h2 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-left: auto;
   }
 }
 
@@ -1262,7 +1263,7 @@ h2 {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  width: 210px;
+  width: 190px;
   margin-left: 30px;
 }
 
@@ -1308,10 +1309,8 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   padding: 0;
   margin-left: -30px;
@@ -1346,9 +1345,10 @@ h2 {
   }
 }
 
-.customers-list:last-child {
-  margin-right: 0;
-  margin-bottom: 0;
+@media screen and (min-width: 480px) {
+  .customers-list:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 480px) {
