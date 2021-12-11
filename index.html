@@ -22,31 +22,29 @@
                 <a href="#" class="header-logo">
                     <span class="header-logo--color">Web</span>Studio 
                 </a>
-                <!-- <button 
+                 <div class="header-list__nav__wrapper">
+                    <ul class="header-list__navigation list-header__navigation">
+                        <li class="header-site__navigation"> 
+                            <a class="header-site__link current-header" href="#">Студия</a>
+                        </li>
+                        <li class="header-site__navigation">
+                            <a class="header-site__link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="header-site__navigation">
+                            <a class="header-site__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <button 
                     class="button-header__navigation js-open-menu"
                     type="button"
                     aria-expanded="false"
                     aria-controls="mobile-menu"
                     js-open-container>
-                    <svg class="header-site__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
-                        <use class="icon-header__menu" href="./images/svg-sprite/symbol-defs.svg#icon-menu_40px"></use>
-                        <use class="icon-header__close" href="./images/svg-sprite/symbol-defs.svg#icon-close_40px"></use>
+                    <svg class="header-site__icon--menu" width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="icon-header__open" href="./images/svg-sprite/symbol-defs.svg#icon-open"></use>
                     </svg>
-                </button> -->
-                <div class="header-list__nav__wrapper is-open">
-                <ul class="header-list__navigation list-header__navigation">
-                    <li class="header-site__navigation"> 
-                        <a class="header-site__link current-header" href="#">Студия</a>
-                    </li>
-                    <li class="header-site__navigation">
-                        <a class="header-site__link" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="header-site__navigation">
-                        <a class="header-site__link" href="#">Контакты</a>
-                    </li>
-                </ul>
-                </div>
-                
+                </button>
             </nav>
                 <ul class="header-site__navigation header-navigation">
                     <li class="header-site__navigation">
@@ -113,30 +111,51 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="header-menu__container js-menu-container">
+
+        <!-- Выпадающее меню -->
+        
+        <div class="menu-container js-menu-container">
             <button class="button-header__navigation js-close-menu">
-                <svg class="header-site__icon" width="40" height="40">
-                    <use class="menu-toggle__close" href="./images/icons.svg#mobile-close"></use>
+                <svg class="header-site__icon--menu" width="40" height="40">
+                    <use class="" href="./images/svg-sprite/symbol-defs.svg#icon-close"></use>
                 </svg>
             </button>
         
-            <ul class="mobile-menu">
-                <li class="mobile-menu__item"><a href="./index.html"
-                        class="mobile-menu__link mobile-menu__link--active">Студия</a></li>
-                <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link">Портфолио</a></li>
-                <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакты</a></li>
+            <ul class="header-mobile__menu">
+                <li class="header-menu__item">
+                    <a href="./index.html" class="header-menu__link header-menu__link--active">Студия</a>
+                    </li>
+                <li class="mobile-menu__item">
+                    <a href="./portfolio.html" class="header-menu__link">Портфолио</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="" class="header-menu__link">Контакты</a>
+                </li>
             </ul>
             <ul class="menu-contacts">
-                <li><a href="tel:+380961111111" class="menu-contacts__tel">+38 096 111 11 11</a></li>
-                <li><a href="mailto:info@devstudio.com" class="menu-contacts__mail">info@devstudio.com</a></li>
+                <li>
+                    <a href="tel:+380961111111" class="menu-contacts__tel">+38 096 111 11 11</a>
+                </li>
+                <li>
+                    <a href="mailto:info@devstudio.com" class="menu-contacts__mail">info@devstudio.com</a>
+                </li>
             </ul>
             <ul class="menu-social">
-                <li class="menu-social__item"><a href="" class="menu-social__link">Instagram</a></li>
-                <li class="menu-social__item"><a href="" class="menu-social__link">Twitter</a></li>
-                <li class="menu-social__item"><a href="" class="menu-social__link">Facebook</a></li>
-                <li class="menu-social__item"><a href="" class="menu-social__link">Linkedin</a></li>
+                <li class="menu-social__item">
+                    <a href="" class="menu-social__link">Instagram</a>
+                </li>
+                <li class="menu-social__item">
+                    <a href="" class="menu-social__link">Twitter</a>
+                </li>
+                <li class="menu-social__item">
+                    <a href="" class="menu-social__link">Facebook</a>
+                </li>
+                <li class="menu-social__item">
+                    <a href="" class="menu-social__link">Linkedin</a>
+                </li>
             </ul>
-        </div> -->
+        </div>
+
     </header>
 
     <!-- Блок герой -->

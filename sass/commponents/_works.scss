@@ -41,9 +41,12 @@
 
 .list-works__image {
   position: relative;
+  @media screen and (min-width: 1200px) {
+    margin-left: 20px;
+  }
 }
 
-.list-works__image__image:last-child {
+.list-works__image:last-child {
   margin-right: 0;
 }
 

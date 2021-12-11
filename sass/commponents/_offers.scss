@@ -1,10 +1,3 @@
-// @media screen and (max-width: 480px) {
-//   .offers-list__title {
-//     display: flex;
-//     flex-direction: column;
-//   }
-// }
-
 .offers-title__list {
   font-weight: 700;
   font-size: 14px;
@@ -73,15 +66,12 @@
   list-style: none;
 
   @media screen and (min-width: 768px) {
-    // display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    // justify-content: center;
-    // align-items: center;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
   }
 }
 

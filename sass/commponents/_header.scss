@@ -6,6 +6,15 @@
 }
 
 .header,
+.header-portfolio {
+  height: 60px;
+
+  @media screen and (min-width: 768px) {
+    height: 100%;
+  }
+}
+
+.header,
 .header-portfolio,
 .header-container {
   display: flex;
