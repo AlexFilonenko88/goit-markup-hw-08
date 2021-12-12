@@ -27,7 +27,8 @@
 
 .offers-list__navigation {
   margin-right: 30px;
-  width: 354px;
+  // width: 450px;
+  margin-bottom: 30px;
 
   @media screen and (max-width: 480px) {
     margin-right: 0;
@@ -56,6 +57,15 @@
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
+  width: 450px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
 .offers-list__title {

@@ -73,10 +73,11 @@
 
   @media screen and (min-width: 768px) {
     margin-right: 165px;
-    align-items: flex-start;
+    // align-items: flex-start;
   }
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
+    align-items: flex-start;
   }
 }
 
@@ -100,9 +101,9 @@
 
 .footer-navigation {
   margin-bottom: 9px;
-  @media screen and (min-width: 768px) {
-    text-align: left;
-  }
+  // @media screen and (min-width: 768px) {
+  //   text-align: left;
+  // }
 
   @media screen and (min-width: 1200px) {
     text-align: left;
@@ -237,7 +238,10 @@
   padding-left: 0;
   margin: 0;
 
-  @media screen and (min-width: 768px) {
+  // @media screen and (min-width: 768px) {
+  //   text-align: left;
+  // }
+  @media screen and (min-width: 1200px) {
     text-align: left;
   }
 }
