@@ -178,6 +178,10 @@
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: $primary-white-color;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 77px;
+  }
 }
 
 .list-link__category {

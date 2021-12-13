@@ -187,7 +187,7 @@
 
   padding: 15px 0 13px 16px;
 
-  width: 450px;
+  width: 100%;
   outline: none;
   margin-bottom: 20px;
 
@@ -231,6 +231,12 @@
   padding: 0;
   text-transform: uppercase;
   color: $primary-white-color;
+}
+
+.footer-section__wrapper,
+.footer-section__list,
+.footer-form {
+  width: 100%;
 }
 
 .text-footer {
