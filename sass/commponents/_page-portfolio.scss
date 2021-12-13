@@ -150,11 +150,20 @@
   @media screen and (min-width: 480px) {
     display: block;
   }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 }
 
 .product-link__wrapper {
   position: relative;
   overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    flex-grow: 1;
+  }
 }
 
 .list-link__wrapper {
