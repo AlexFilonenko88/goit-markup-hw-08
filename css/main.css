@@ -1952,6 +1952,12 @@ h2 {
   height: auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .list-link__image {
+    height: 294px;
+  }
+}
+
 .hero-portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
