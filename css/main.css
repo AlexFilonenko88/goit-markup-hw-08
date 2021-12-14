@@ -1573,7 +1573,7 @@ h2 {
 
 @media screen and (min-width: 1200px) {
   .footer-wrapper {
-    margin-right: 93px;
+    margin-right: 23px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -1791,6 +1791,15 @@ h2 {
   width: 100%;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-section__wrapper,
+  .footer-section__list,
+  .footer-form {
+    width: 354px;
+    margin-left: 70px;
+  }
+}
+
 .text-footer {
   list-style: none;
   padding-left: 0;
@@ -1956,8 +1965,15 @@ h2 {
 }
 
 .hero-portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .list-header__navigation.link-list {
@@ -2112,6 +2128,7 @@ h2 {
   .list-link__category {
     margin-bottom: 30px;
     margin-right: 15px;
+    width: 370px;
   }
 }
 

@@ -134,8 +134,13 @@
 // }
 
 .hero-portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .list-header__navigation.link-list {
@@ -246,6 +251,7 @@
   @media screen and (min-width: 1200px) {
     margin-bottom: 30px;
     margin-right: 15px;
+    width: 370px;
   }
 }
 

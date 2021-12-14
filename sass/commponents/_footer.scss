@@ -63,7 +63,7 @@
   margin-bottom: 60px;
 
   @media screen and (min-width: 1200px) {
-    margin-right: 93px;
+    margin-right: 23px;
     align-items: flex-start;
   }
 }
@@ -244,14 +244,20 @@
   width: 100%;
 }
 
+.footer-section__wrapper,
+.footer-section__list,
+.footer-form {
+  @media screen and (min-width: 1200px) {
+    width: 354px;
+    margin-left: 70px;
+  }
+}
+
 .text-footer {
   list-style: none;
   padding-left: 0;
   margin: 0;
 
-  // @media screen and (min-width: 768px) {
-  //   text-align: left;
-  // }
   @media screen and (min-width: 1200px) {
     text-align: left;
   }
