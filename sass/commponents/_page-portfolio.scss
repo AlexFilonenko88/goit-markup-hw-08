@@ -92,10 +92,11 @@
 .list-text__name {
   margin: 0 0 4px 0;
   color: #4e4c4c;
+  font-size: 18px;
 
-  @media screen and (min-width: 480px) {
-    font-size: 18px;
-  }
+  // @media screen and (min-width: 480px) {
+  //   font-size: 18px;
+  // }
 }
 
 .list-hero__buttom {
