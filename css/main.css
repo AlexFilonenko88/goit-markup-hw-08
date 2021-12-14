@@ -1911,6 +1911,12 @@ h2 {
   color: #4e4c4c;
 }
 
+@media screen and (min-width: 480px) {
+  .list-text__name {
+    font-size: 18px;
+  }
+}
+
 .list-hero__buttom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1949,13 +1955,7 @@ h2 {
 .list-link__image {
   display: block;
   width: 100%;
-  height: auto;
-}
-
-@media screen and (min-width: 1200px) {
-  .list-link__image {
-    height: 294px;
-  }
+  height: 100%;
 }
 
 .hero-portfolio {
@@ -2080,6 +2080,7 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   background-color: #ffffff;
+  margin-bottom: 30px;
 }
 
 .list-link__category:hover {
