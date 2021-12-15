@@ -566,6 +566,10 @@ h2 {
   background-color: #188ce8;
 }
 
+.header-button__container {
+  max-width: 450px;
+}
+
 .backdrop {
   z-index: 888;
   position: fixed;
@@ -932,6 +936,13 @@ h2 {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .offers-title__list {
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -2319,6 +2330,14 @@ h2 {
 .menu-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+.button-header__container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 0 15px;
+  width: 480px;
 }
 
 .button-header__navigation {
