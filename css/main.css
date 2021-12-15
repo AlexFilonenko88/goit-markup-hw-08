@@ -693,7 +693,7 @@ h2 {
 }
 
 .backdrop-label__form {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   color: #757575;
   margin-top: 20px;
@@ -707,6 +707,12 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .backdrop-label__form {
+    font-size: 14px;
+  }
 }
 
 .backdrop-label__link {
