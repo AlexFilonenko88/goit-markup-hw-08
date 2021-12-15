@@ -20,10 +20,11 @@
   display: flex;
 }
 
-// .header-container {
-//   flex-direction: row;
-//   justify-content: space-between;
-// }
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
 
 .list-header__navigation .footer-text {
   color: rgba(255, 255, 255, 0.6);
@@ -146,9 +147,13 @@
 }
 
 .header-main__navigation {
-  // position: relative;
+  position: fixed;
   display: flex;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    position: relative;
+  }
 }
 
 .header-site__link {
