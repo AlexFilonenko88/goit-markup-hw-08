@@ -68,6 +68,19 @@
   border-radius: 0px 0px 4px 4px;
 }
 
+.list-teams__border:nth-child(2n) {
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+  }
+}
+
+.list-teams__border--width {
+  width: 100%;
+}
+
 .list-teams__border:last-child {
   margin-right: 0;
   margin-bottom: 0;
@@ -115,10 +128,6 @@
   @media screen and (min-width: 1200px) {
     width: 270px;
     margin-left: 0;
-    margin-right: 15px;
+    margin-right: 30px;
   }
-}
-
-.list-teams__border--width {
-  width: 100%;
 }
